@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Session -> Logout
+Comment=Exit the user session and return to the greeter
+Exec=swaymsg exit
+Icon=icon-logout-128
+Terminal=true
+Type=Application
+Categories=System;

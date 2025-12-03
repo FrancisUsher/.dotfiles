@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Power -> Shutdown
+Comment=Shutdown system immediately (but safely)
+Exec=shutdown now
+Icon=icon-power-128
+Terminal=true
+Type=Application
+Categories=System;

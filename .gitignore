@@ -19,3 +19,11 @@ dev
 
 # Backups shouldn't be committed, they're just local hedges
 *.bkp
+
+# Anythin after this line is uncategorized stuff I redirected in from terminal
+.lesshst
+.local/state
+.local/share/Trash
+.local/share/nvim
+.local/share/qutebrowser
+.local/share/zoxide
