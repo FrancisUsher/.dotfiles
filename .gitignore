@@ -26,3 +26,5 @@ dev
 .local/share/nvim
 .local/share/qutebrowser
 .local/share/zoxide
+.bash_logout
+.histfile
