@@ -1,6 +1,5 @@
 # Don't track itself since it's tracked via the bare repo in .dotfiles
 .dotfiles/*
-!.dotfiles/README.md
 
 # Regular user directories
 Downloads
