@@ -1,0 +1,19 @@
+{
+  "security": {
+    "auth": {
+      "selectedType": "gemini-api-key"
+    }
+  },
+  "general": {
+    "vimMode": true,
+    "previewFeatures": true
+  },
+  "output": {
+    "format": "text"
+  },
+  "ui": {
+    "footer": {
+      "hideContextPercentage": false
+    }
+  }
+}

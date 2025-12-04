@@ -19,6 +19,11 @@ dev
 # Backups shouldn't be committed, they're just local hedges
 *.bkp
 
+# Track some stuff but ignore most of these dirs (may contain secrets, logs,
+# and other bad stuff
+.gemini/*
+!.gemini/settings.json
+
 # Anythin after this line is uncategorized stuff I redirected in from terminal
 .lesshst
 .local/state
@@ -28,3 +33,5 @@ dev
 .local/share/zoxide
 .bash_logout
 .histfile
+
+
