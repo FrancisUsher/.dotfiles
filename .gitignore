@@ -23,6 +23,7 @@ dev
 # and other bad stuff
 .gemini/*
 !.gemini/settings.json
+!.gemini/GEMINI.md
 
 # Anythin after this line is uncategorized stuff I redirected in from terminal
 .lesshst
