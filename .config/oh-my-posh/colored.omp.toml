@@ -1,0 +1,24 @@
+extends = "./theme.omp.toml"
+[[blocks]]
+type = 'prompt'
+alignment = 'left'
+
+[[blocks.segments]]
+type = 'path'
+foreground = "#1c1b1a"
+background = "#76856a"
+
+[[blocks.segments]]
+type = 'session'
+foreground = "#1c1b1a"
+background = "#8c504a"
+
+[[blocks.segments]]
+type = 'time'
+foreground = "#1c1b1a"
+background = "#846b97"
+
+[[blocks.segments]]
+type = 'git'
+foreground = "#1c1b1a"
+background = "#6ab0c7"

@@ -1,0 +1,16 @@
+/* Everything uses neutral colors unless active, interacting, or alerting */
+@define-color color-background #1c1b1a;
+@define-color color-border #333230;
+@define-color color-text #b8b5b1;
+@define-color color-surface #262423;
+/* These colors reserved for active, interacting, alerting states */
+@define-color color-tab-bg-active #4a4733;
+@define-color color-tab-bg-urgent #8c504a;
+@define-color color-network-bg-connected #c2b280;
+@define-color color-network-bg-disconnected #8c504a;
+@define-color color-battery-bg-normal #76856a;
+@define-color color-battery-bg-charging #d4af37;
+@define-color color-battery-bg-warning #c4824d;
+@define-color color-battery-bg-dying #8c504a;
+@define-color color-datetime-text #e3cba5;
+@define-color color-power-bg #9d5d40;

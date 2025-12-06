@@ -1,0 +1,26 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "logo": "arch3",
+  "modules": [
+    "title",
+    "separator",
+    "os",
+    "host",
+    "uptime",
+    "packages",
+    "memory",
+    "processes",
+    "shell",
+    "lm",
+    "wm",
+    "cursor",
+    "terminal",
+    "terminalfont",
+    "editor" // TODO: this doesn't work
+    // TODO: add more entries:
+    // - qutebrowser
+    // - launcher
+    // - clipboard history
+    // etc?
+  ]
+}

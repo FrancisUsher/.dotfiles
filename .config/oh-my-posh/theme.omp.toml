@@ -1,0 +1,56 @@
+version = 3
+
+[upgrade]
+  source = 'cdn'
+  interval = '168h'
+  auto = false
+  notice = false
+
+[[blocks]]
+  type = 'prompt'
+  alignment = 'left'
+
+  [[blocks.segments]]
+    leading_diamond = ''
+    trailing_diamond = ''
+    template = '{{ .UserName }} '
+    foreground = '#1c1b1a'
+    background = '#8c504a'
+    type = 'session'
+    style = 'diamond'
+
+  [[blocks.segments]]
+    leading_diamond = ''
+    trailing_diamond = ''
+    template = ' {{ .Path }} '
+    foreground = '#1c1b1a'
+    background = '#76856a'
+    type = 'path'
+    style = 'diamond'
+
+    [blocks.segments.properties]
+      style = 'folder'
+
+  [[blocks.segments]]
+    leading_diamond = ''
+    trailing_diamond = ''
+    template = ' git({{ .HEAD }}) '
+    foreground = '#1c1b1a'
+    background = '#6ab0c7'
+    type = 'git'
+    style = 'diamond'
+
+    [blocks.segments.properties]
+      branch_icon = ''
+
+  [[blocks.segments]]
+    leading_diamond = ''
+    trailing_diamond = ''
+    template = ' {{ .CurrentDate | date .Format }} '
+    foreground = '#1c1b1a'
+    background = '#846b97'
+    type = 'time'
+    style = 'diamond'
+
+    [blocks.segments.properties]
+      time_format = '15:04'

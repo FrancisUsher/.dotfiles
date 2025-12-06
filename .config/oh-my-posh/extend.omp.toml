@@ -1,0 +1,13 @@
+extends = "./theme.omp.toml"
+[[blocks]]
+  type = 'prompt'
+  alignment = 'left'
+  [[blocks.segments]]
+    type = 'path'
+    background="#76856a"
+  [[blocks.segments]]
+    type = 'session'
+    background="#8c504a"
+  [[blocks.segments]]
+    type = 'time'
+    background="#846b97"
