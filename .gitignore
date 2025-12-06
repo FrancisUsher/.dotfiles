@@ -15,6 +15,7 @@ dev
 # Secrets!
 .ssh
 .config/gh/hosts.yml
+.pki
 
 # Backups shouldn't be committed, they're just local hedges
 *.bkp
@@ -36,3 +37,5 @@ dev
 .histfile
 
 
+.npm
+.npm-global
