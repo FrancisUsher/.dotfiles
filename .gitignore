@@ -8,9 +8,16 @@ dev
 # Logs etc
 .python_history
 .bash_history
+.histfile
+.lesshst
 
-# User-level system files
+# User-level system files, application stores
 .cache
+.local/state
+.local/share/Trash
+.local/share/nvim
+.local/share/qutebrowser
+.local/share/zoxide
 
 # Secrets!
 .ssh
@@ -26,16 +33,12 @@ dev
 !.gemini/settings.json
 !.gemini/GEMINI.md
 
-# Anythin after this line is uncategorized stuff I redirected in from terminal
-.lesshst
-.local/state
-.local/share/Trash
-.local/share/nvim
-.local/share/qutebrowser
-.local/share/zoxide
-.bash_logout
-.histfile
-
-
+# Package builds/caches/etc
+.cargo
+build
+go
 .npm
 .npm-global
+
+# Anythin after this line is uncategorized stuff I redirected in from terminal
+.bash_logout
