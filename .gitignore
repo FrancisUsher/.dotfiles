@@ -18,6 +18,9 @@ dev
 .local/share/nvim
 .local/share/qutebrowser
 .local/share/zoxide
+.zcompdump
+.config/chromium
+.wget-hsts
 
 # Secrets!
 .ssh
@@ -33,6 +36,8 @@ dev
 .gemini/*
 !.gemini/settings.json
 !.gemini/GEMINI.md
+.w3m/*
+!.w3m/config
 
 # Package builds/caches/etc
 .cargo
