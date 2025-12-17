@@ -7,19 +7,23 @@ c.auto_save.session = True
 # Always use dark mode media type
 c.colors.webpage.darkmode.enabled = True
 
+
 # Don't show any images, except on certain pages
 c.content.images = False
-with config.pattern('*://*.usher.codes/*') as p:
-    p.content.images = True
 
-with config.pattern('*://wallhaven.cc/*') as p:
-    p.content.images = True
+def whitelist_images(url_pattern):
+    with config.pattern(url_pattern) as p:
+        p.content.images = True
 
-with config.pattern('*://github.com/*') as p:
-    p.content.images = True
+whitelisted_image_urls = [
+    '*://*.usher.codes/*',
+    '*://wallhaven.cc/*',
+    '*://github.com/*',
+    '*://*.github.io/*',
+    '*://ohmyposh.dev/*',
+    '*://*.jethro.dev/*',
+]
 
-with config.pattern('*://*.github.io/*') as p:
-    p.content.images = True
+for url in whitelisted_image_urls:
+    whitelist_images(url)
 
-with config.pattern('*://ohmyposh.dev/*') as p:
-    p.content.images = True
