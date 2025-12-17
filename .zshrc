@@ -49,6 +49,7 @@ eval "$(oh-my-posh init zsh --config '~/.config/oh-my-posh/colored.omp.toml')"
 alias autohack='nmcli device wifi connect autohackbot2600'
 alias icat='kitten icat'
 alias ls='ls --color=auto -la'
+alias :q='exit'
 # Don't actually use this for now but nice to remember how to do it
 alias todo='todo.sh'
 alias battery='acpi -b'
