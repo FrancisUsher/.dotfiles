@@ -825,18 +825,6 @@ require('lazy').setup({
     event = 'BufReadPre',
     opts = {},
   },
-  {
-    'nvim-orgmode/orgmode',
-    event = 'VeryLazy',
-    config = function()
-      -- Setup orgmode
-      require('orgmode').setup {
-        org_agenda_files = '~/orgfiles/**/*',
-        org_default_notes_file = '~/orgfiles/refile.org',
-      }
-    end,
-  },
-
   -- Highlight todo, notes, etc in comments
   { 'folke/todo-comments.nvim', event = 'VimEnter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } },
 
@@ -891,7 +879,7 @@ require('lazy').setup({
         -- Some languages depend on vim's regex highlighting system (such as Ruby) for indent rules.
         --  If you are experiencing weird indenting issues, add the language to
         --  the list of additional_vim_regex_highlighting and disabled languages for indent.
-        additional_vim_regex_highlighting = { 'ruby' },
+        additional_vim_regex_highlighting = { 'ruby', 'org' },
       },
       indent = { enable = true, disable = { 'ruby' } },
     },
@@ -902,7 +890,30 @@ require('lazy').setup({
     --    - Show your current context: https://github.com/nvim-treesitter/nvim-treesitter-context
     --    - Treesitter + textobjects: https://github.com/nvim-treesitter/nvim-treesitter-textobjects
   },
+  {
+    'nvim-orgmode/orgmode',
+    ft = { 'org' },
+    -- event = 'VeryLazy',
+    -- dependencies = { 'nvim-treesitter/nvim-treesitter' },
+    config = function()
+      -- Setup orgmode
+      require('orgmode').setup {
+        org_agenda_files = '~/orgfiles/**/*',
+        org_default_notes_file = '~/orgfiles/refile.org',
+        org_use_property_inheritance = false,
+        org_hide_leading_stars = true,
+      }
+    end,
+  },
 
+  {
+    'nvim-orgmode/org-bullets.nvim',
+    event = 'VeryLazy',
+    config = function()
+      -- Setup orgmode
+      require('org-bullets').setup()
+    end,
+  },
   -- The following comments only work if you have downloaded the kickstart repo, not just copy pasted the
   -- init.lua. If you want these files, they are in the repository, so you can just download them and
   -- place them in the correct locations.
