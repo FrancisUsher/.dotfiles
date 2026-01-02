@@ -59,6 +59,10 @@ alias grep='rg'
 alias vim='nvim'
 # Bare git repo for dotfile config management
 alias dots='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
+# Better syntax highlighting for terminal stuff using `bat`
+alias cat='bat'
+export MANPAGER="zsh -c 'col -bx | bat -l man -p'"
+export MANROFFOPT='-c'
 
 # The NEWT_COLORS variable is used to theme apps like
 # nmtui. This uses the 16 standard 'ansi colors' which are set
