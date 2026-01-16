@@ -22,7 +22,8 @@ whitelisted_image_urls = [
     '*://*.github.io/*',
     '*://ohmyposh.dev/*',
     '*://*.jethro.dev/*',
-    '*://quickshell.org/*'
+    '*://quickshell.org/*',
+    '*://drop.com/*'
 ]
 
 for url in whitelisted_image_urls:
